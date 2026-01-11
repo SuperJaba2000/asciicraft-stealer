@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>ASCIICraft Stealer</title>
+    <meta charset="utf-8">
+    <style>
+        body {
+            width: 300px;
+            padding: 15px;
+            font-family: Arial, sans-serif;
+        }
+        button {
+            width: 100%;
+            padding: 10px;
+            background: #48ef88;
+            color: white;
+            border: none;
+            border-radius: 4px;
+            cursor: pointer;
+            font-size: 16px;
+        }
+        button:hover {
+            background: #48ef88;
+        }
+
+        #save_file_name {
+            margin-top: 15px;
+            max-height: 200px;
+            overflow-y: auto;
+            border: 1px solid #ddd;
+            padding: 10px;
+            display: block;
+            white-space: pre-wrap;
+            word-wrap: break-word;
+            width: calc(100% - 20px);
+        }
+
+        #result {
+            margin-top: 15px;
+            max-height: 100px;
+            overflow-y: auto;
+            /*border: 1px solid #ddd;*/
+            padding: 10px;
+            display: none;
+            white-space: pre-wrap;
+            word-wrap: break-word;
+            width: calc(100% - 20px);
+            font-size: 14px;
+            font-weight: bold;
+        }
+    </style>
+</head>
+<body>
+    <button id="get_content">Скачать ascii art</button>
+    <input type="text" id="save_file_name" placeholder="имя файла" value="art.json"/>
+    <div id="result"></div>
+    
+    <script src="popup.js"></script>
+</body>
+</html>
