@@ -1,0 +1,43 @@
+body {
+    width: 300px;
+    padding: 15px;
+    font-family: Arial, sans-serif;
+}
+
+button {
+    width: 100%;
+    padding: 10px;
+    background: #48ef88;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 16px;
+}
+
+button:hover {
+    background: #48ef88;
+}
+
+#save_file_name {
+    margin-top: 15px;
+    max-height: 200px;
+    border: 1px solid #ddd;
+    padding: 10px;
+    display: block;
+    white-space: pre-wrap;
+    word-wrap: break-word;
+    width: calc(100% - 20px);
+}
+
+#result {
+    margin-top: 15px;
+    max-height: 100px;
+    padding: 10px;
+    display: none;
+    white-space: pre-wrap;
+    word-wrap: break-word;
+    width: calc(100% - 20px);
+    font-size: 14px;
+    font-weight: bold;
+}

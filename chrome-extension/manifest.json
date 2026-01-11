@@ -2,7 +2,7 @@
   "manifest_version": 3,
   "name": "ASCIICraft Stealer",
   "version": "1.0",
-  "description": "Скачивание ASCII-артов из asciicraft.com",
+  "description": "Downloading ascii-arts from asciicraft.com",
   "permissions": ["activeTab", "scripting"],
   "action": {
     "default_popup": "popup.html",
