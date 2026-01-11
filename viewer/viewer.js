@@ -109,7 +109,7 @@ export function draw(art_path, options) {
             }
         }
 
-        process.stdout.write(line_string + '\n');
+        process.stdout.write(line_string + (i != (lines.length - 1) ? '\n' : ''));
     }
 }
 
@@ -123,10 +123,15 @@ if(run_as_utility) {
         info: process.argv.includes('-info')
     };
 
-    if(info) {
+    if(options.info) {
         console.log(info(art_path));
-        return;
+        process.exit(0);
     }
 
     draw(art_path, options);
+
+    // infinity loop to prevent printing "Press any key to continue..." or something like that
+    while(true) {
+
+    }
 }
